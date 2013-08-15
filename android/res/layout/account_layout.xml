@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mymoney_single_account"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mymoney_topbar"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/account_overview_top" >
+
+        <TextView
+            android:id="@+id/mymoney_balance_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:text="@string/loading" />
+
+        <TextView
+            android:id="@+id/mymoney_accountnumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/loading"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+
+    <com.markupartist.android.widget.PullToRefreshListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/account_overview_bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/mymoney_topbar" >
+    </com.markupartist.android.widget.PullToRefreshListView>
+    
+
+</RelativeLayout>

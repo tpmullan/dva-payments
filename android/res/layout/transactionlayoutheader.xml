@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/transaction_date_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: " />
+
+        <TextView
+            android:id="@+id/transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+
+    <TextView
+        android:id="@+id/transactions_amount_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount:" />
+
+    <TextView
+        android:id="@+id/transactions_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+    <TextView
+        android:id="@+id/mymoney_balance_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Account:" />
+
+    <TextView
+        android:id="@+id/transaction_toaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+        >
+
+        <TextView
+            android:id="@+id/mymoney_accountnumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Account: " />
+        <TextView
+        android:id="@+id/transaction_fromaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+         >
+
+        <TextView
+            android:id="@+id/mymoney_accountnumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memo: " />
+        <TextView
+        android:id="@+id/transaction_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    </LinearLayout>
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+         >
+
+        <TextView
+            android:id="@+id/mymoney_accountnumber_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance: " />
+        <TextView
+        android:id="@+id/transaction_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

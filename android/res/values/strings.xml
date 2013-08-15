@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="app_name">DVA Payments</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1_signup">Sign In</string>
+    <string name="title_section2_register">Register</string>
+    <string name="title_section3_proxy">Proxy Settings</string>
+    <string name="signin_username">Email / Username</string>
+    <string name="siginin_password">Password</string>
+    <string name="siginin_remember_me">Remember me!</string>
+    <string name="sigin_submitlogin">Sign In</string>
+    <string name="register_fullname">Name</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="password_first">Password</string>
+    <string name="register_password2">Confirmation</string>
+    <string name="register_register">Register Now</string>
+    <string name="proxy_host">Proxy Host (or IP)</string>
+    <string name="proxy_port">Port Number</string>
+    <string name="proxy_updateconfig">Update Config</string>
+    <string name="proxy_server_ip">Server Host (or IP)</string>
+    <string name="proxy_server_port">Server Port</string>
+    <string name="proxy_server_port_default">80</string>
+    <string name="welcome_name_title">Home</string>
+    <string name="myaccount_name_title">My Account</string>
+    <string name="mymoney_name_title">My Money</string>
+    <string name="movemoney_name_title">Move Money</string>
+    <string name="myfriends_name_title">My Friends</string>
+    <string name="welcome_myaccount">My Account</string>
+    <string name="welcome_mymoney">My Money</string>
+    <string name="welcome_movemoney">Move Money</string>
+    <string name="welcome_myfriends">My Friends</string>
+    <string name="myaccount_useraccount">Your Username :</string>
+    <string name="myaccount_password">Your Password:</string>
+    <string name="myaccount_passwordoutput">My Password</string>
+    <string name="myaccount_email">Your Email:</string>
+    <string name="deleteAccount">"Delete Your Account: "</string>
+    <string name="myaccount_delete">Delete</string>
+    <string name="popupPassword_closePopup">Update Password</string>
+    <string name="myaccount_updateaccount">Update Account</string>
+    <string name="dva_payments">DVA Payments</string>
+    <string name="loading">Loading....</string>
+    <string name="move_money_nfc_qr">NFC/QR Transfer</string>
+    <string name="signupnow"><u>Sign Up Now!</u></string>
+    <string name="forgotpassword"><u>Forgot password?</u></string>
+</resources>
