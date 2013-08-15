@@ -1,0 +1,24 @@
+<% provide(:title, 'Sign In') %>
+
+<div class="unshuttered">
+  <%= form_for(:session, url: sessions_path) do |f| %>
+      <div class="form-wrapper ui-corner-all ui-listview ui-listview-inset ui-shadow">
+        <div class="form-element qp-name-row">
+          <%= f.label :email, 'Email / Username' %>
+          <%= f.text_field :email %>
+        </div>
+        <div class="form-element qp-name-row">
+          <%= f.label :password %>
+          <%= f.password_field :password %>
+        </div>
+        <%= f.submit "Sign in", class: "primary-button", 'data-role' => 'button', 'data-theme' => 'dva' %>
+      </div>
+  <% end %>
+</div>
+<div>
+  <p style="color: #5c160e;margin-top:30px ;">New user? &nbsp;
+    <%= link_to 'Sign up now!', signup_path %>
+    </br>
+    <%= link_to 'Forgotten password?', new_password_reset_path %>
+  </p>
+</div>

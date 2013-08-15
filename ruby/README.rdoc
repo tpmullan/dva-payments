@@ -1,0 +1,44 @@
+    We are creating a fake mobile payment solution, which makes it easy to ‘securely’ move money between users and accounts.
+This ‘new hip company’ focuses on using accepted design styles and practices but is developed using novice techniques
+for the android and ruby environments.  During development we are focusing on using popular guides and books that we
+found through google and other mediums to solve issues.  The development process that we decided to use is called Agile.
+For anyone that isn’t familiar with the process, we broke our project into Sprints.  Each sprint has specific goals that
+need to be completed. For example, one of our goals was to create a token based transfer system.  Another part of agile
+development is daily stand ups.  This helps keep developers accountable for their work on issues.  Unfortunately this f
+ocuses on completing assigned tasks as quickly as possible, not necessarily securely.  We ensured the latest and greatest
+API’s were used in the application.  This makes sure any security issues are not created by using old technology and
+solely from issues in current design methods.  In our app we are using many features such as NFC, QR codes, Full
+Featured REST client, SQLite, and External API calls. When we created designs, we choose the most popularly accepted
+solutions, and implemented many common security fixes such as encrypting the database.   These fixes were done with
+simple guides available on the internet, but not necessarily with the strongest methods.  This design practice will
+introduce all of the OWASP Mobile Top 10 security issues.
+
+    The main difference between our project and the projects like webgoat, iGoat and so on is that we will release an
+insecure version and a  more secure version.  We will also be documenting the places in the code where common
+security issues arise and reasons why developers might be making these common mistakes.  Furthermore we will show
+inline fixes to  common mistakes that are made in the insecure application. Through education we hope to empower
+developers to be able to implement secure coding practices and security oriented design decisions. We will convey
+this information by creating a series of blog post which show real world examples of the OWASP Mobile Top 10, how
+to resolve the issue, and preventive measures.  Our intention is to show a full application with security issues
+and how to fix each issue on the OWASP Mobile Top Ten.  When we launch our final app and server we will be open
+sourcing both the Android Application, the mobile web application, and the backend server.  We will also providing
+both an Amazon EC2 image and Open Virtualization Archive (OVA) for quick setup and deployment for test environments.
+
+    We hope to contribute to both the security and development communities a robust, professional looking application of
+the same caliper as existing applications. This application will have examples of OWASP Mobile Top Ten issues, and
+detailed blog post on how to fix the issues. Our goal is that this information will be pertinent to security
+professionals, developers, and anyone interested in mobile security. If this sounds interesting to you, please follow
+our future blog post, we have plenty of enticing information to come.
+
+
+Overview of the OWASP Mobile Top 10
+M1: Insecure Data Storage (Android)
+M2: Weak Server Side Controls (Ruby)
+M3: Insufficient Transport Layer Protection (Android)
+M4: Client Side Injection (Android)
+M5: Poor Authorization and Authentication (Ruby)
+M6: Improper Session Handling (Ruby)
+M7: Security Decisions Via Untrusted Inputs (Ruby)
+M8: Side Channel Data Leakage (Android)
+M9: Broken Cryptography (Android)
+M10: Sensitive Information Disclosure (Android & Ruby)

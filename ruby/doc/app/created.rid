@@ -1,0 +1,17 @@
+Wed, 26 Jun 2013 11:38:00 -0500
+doc/README_FOR_APP	Wed, 29 May 2013 17:09:23 -0500
+app/controllers/application_controller.rb	Tue, 11 Jun 2013 09:25:24 -0500
+app/controllers/password_resets_controller.rb	Tue, 25 Jun 2013 14:25:08 -0500
+app/controllers/sessions_controller.rb	Tue, 25 Jun 2013 14:25:02 -0500
+app/controllers/transaction_controller.rb	Wed, 26 Jun 2013 10:57:16 -0500
+app/controllers/users_controller.rb	Wed, 26 Jun 2013 11:29:32 -0500
+app/helpers/application_helper.rb	Tue, 11 Jun 2013 09:25:24 -0500
+app/helpers/password_resets_helper.rb	Tue, 25 Jun 2013 14:25:02 -0500
+app/helpers/sessions_helper.rb	Mon, 17 Jun 2013 17:31:07 -0500
+app/helpers/transaction_helper.rb	Fri, 14 Jun 2013 11:07:05 -0500
+app/helpers/users_helper.rb	Tue, 11 Jun 2013 09:25:24 -0500
+app/mailers/user_mailer.rb	Tue, 25 Jun 2013 14:25:02 -0500
+app/models/account.rb	Fri, 21 Jun 2013 09:32:40 -0500
+app/models/q_rtoken.rb	Wed, 26 Jun 2013 10:09:39 -0500
+app/models/transaction.rb	Wed, 26 Jun 2013 09:36:38 -0500
+app/models/user.rb	Wed, 26 Jun 2013 10:09:39 -0500

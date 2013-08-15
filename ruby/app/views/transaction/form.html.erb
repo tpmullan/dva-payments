@@ -1,0 +1,48 @@
+<% provide(:title, 'Transfer') %>
+
+<div class="unshuttered">
+  <%= form_for(@transaction, :url => transfer_path(@transaction), :as => :transfer) do |f| %>
+      <% if @transaction.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction:</h2>
+
+            <ul>
+              <% @transaction.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+      <div class="form-wrapper ui-corner-all ui-listview ui-listview-inset ui-shadow">
+        <div class="form-element qp-name-row">
+          <%= f.label :toAccount, 'Transfer to' %>
+          <%= f.text_field :toAccount %>
+        </div>
+        <div class="form-element qp-name-row">
+          <%= f.label :fromAccount, 'Pay from' %>
+          <%= f.select :fromAccount, @accounts -%>
+        </div>
+        <div class="form-element qp-name-row">
+          <%= f.label :amount, 'Amount $' %>
+          <%= f.text_field :amount, :step => 0.01, :type => 'number' %>
+        </div>
+        <div class="form-element qp-name-row">
+          <%= f.label :memo %>
+          <%= f.text_field :memo, :maxlength => 200 %>
+        </div>
+      </div>
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <%= link_to 'Cancel', root_path, :class => 'cancel secondary-button', 'data-role' => "button",
+                      'data-theme' => 'dva', 'data-icon' => "back" %>
+        </div>
+        <div class="ui-block-b">
+          <%= f.submit 'Transfer', 'data-role' => "button", 'data-theme' => 'dva',
+                       'data-icon' => "arrow-r", 'data-iconpos' => "right" %>
+        </div>
+      </div>
+
+  <% end %>
+
+  <%= link_to 'QR Transfer', token_path, 'data-role' => "button", 'data-icon' => "arrow-r", 'data-iconpos' => "right" %>
+</div>

@@ -1,0 +1,34 @@
+<% provide(:title, 'Profile') %>
+<ul data-inset="true" data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+
+  <li class="ui-btn ui-btn-icon-right ui-li ui-corner-top ui-btn-up-d" data-role="list-divider" data-corners="false"
+      data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="e">
+    <div class="ui-li ui-corner-top">
+      <%= @user.name %>'s Friends
+    </div>
+  </li>
+  <li class="">
+    <div class="ui-btn-inner ui-li">
+      <div class="ui-btn-text">
+        <table data-role="table" id="table-column-toggle" data-theme="d" data-mode="columntoggle" class="ui-responsive table-stroke">
+          <thead>
+          <tr>
+            <th data-priority="2">Username</th>
+            <th data-priority="3">Email</th>
+            <th data-priority="1">Name</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @friends.each do |f| %>
+              <tr>
+                <td><%= f[:username] %></td>
+                <td><%= f[:email] %></td>
+                <td><%= f[:name] %></td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </li>
+</ul>

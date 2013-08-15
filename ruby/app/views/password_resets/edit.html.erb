@@ -1,0 +1,33 @@
+<% provide(:title, 'Password Reset') %>
+<%= form_for @user, :url => password_reset_path(params[:id]) do |f| %>
+    <% if @user.errors.any? %>
+        <div class="error_messages">
+          <h2>Form is invalid</h2>
+          <ul>
+            <% for message in @user.errors.full_messages %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="form-wrapper ui-corner-all ui-listview ui-listview-inset ui-shadow">
+      <div class="form-element qp-name-row">
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </div>
+      <div class="form-element qp-name-row">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation %>
+      </div>
+    </div>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <%= link_to 'Cancel', root_path, :class => 'cancel secondary-button', 'data-role' => "button",
+                    'data-theme' => 'dva', 'data-icon' => "back" %>
+      </div>
+      <div class="ui-block-b">
+        <%= f.submit "Update Password", 'data-role' => "button", 'data-theme' => 'dva',
+                     'data-icon' => "arrow-r", 'data-iconpos' => "right" %>
+      </div>
+    </div>
+<% end %>

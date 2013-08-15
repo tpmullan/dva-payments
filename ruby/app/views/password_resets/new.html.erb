@@ -1,0 +1,17 @@
+<% provide(:title, 'Password Reset') %>
+<%= form_tag password_resets_path, :method => :post do %>
+    <div class="form-wrapper ui-corner-all ui-listview ui-listview-inset ui-shadow">
+      <div class="form-element qp-name-row">
+        <%= label_tag :email, 'Please enter the Email associated with your Account:' %>
+        <%= text_field_tag :email, params[:email] %>
+      </div>
+    </div>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">
+        <%= link_to 'Cancel', root_path, :class => 'cancel secondary-button', 'data-role' => "button",
+                    'data-theme' => 'dva', 'data-icon' => "back" %>
+      </div>
+      <div class="ui-block-b"><%= submit_tag "Reset Password", 'data-role' => "button", 'data-theme' => 'dva',
+                                             'data-icon' => "arrow-r", 'data-iconpos' => "right" %></div>
+    </div>
+<% end %>

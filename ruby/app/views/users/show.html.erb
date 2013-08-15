@@ -1,0 +1,30 @@
+<% provide(:title, 'Profile') %>
+<div class="unshuttered">
+  <div class="form-wrapper ui-corner-all ui-listview ui-listview-inset ui-shadow">
+    <p style="font-size: 18px;">
+      <small style="font-weight: normal;color: #7f8c8d;">Name:</small>
+      &nbsp;<%= @user.name %></p>
+    <p style="font-size: 18px;">
+      <small style="font-weight: normal;color: #7f8c8d;">Email:&nbsp;</small>
+      &nbsp;<%= @user.email %></p>
+    <br/>
+    <hr/>
+    <br/>
+    <% if admin? %>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <%= link_to 'All Users', users_path, 'data-role' => "button", 'data-theme' => "dva",
+                        'data-icon' => "arrow-l", 'data-iconpos' => "left" %>
+          </div>
+          <div class="ui-block-b">
+            <%= link_to 'Edit profile', edit_user_path(@user), 'data-role' => "button", 'data-icon' => "edit",
+                        'data-theme' => "dva", 'data-iconpos' => "right" %>
+          </div>
+        </div>
+    <% else %>
+        <%= link_to 'Edit profile', edit_user_path(@user), 'data-role' => "button", 'data-icon' => "edit",
+                    'data-theme' => "dva", 'data-iconpos' => "right" %>
+    <% end %>
+  </div>
+</div>
+

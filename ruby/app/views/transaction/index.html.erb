@@ -1,0 +1,51 @@
+<% provide(:title, 'My Accounts') %>
+
+<div id="accountsList">
+
+  <ul data-inset="true" data-role="listview" data-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+    <li class="ui-btn ui-btn-icon-right ui-li ui-corner-top ui-btn-up-d" data-role="list-divider" data-corners="false"
+        data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="e">
+      <div class="ui-li ui-corner-top">
+        <div class="ui-btn-text">
+          <h4 style="color: #261c02;text-shadow: 0 -1px 0 #fff;"><span style="float:right;color: #27ae60;">
+            Balance: $<%= @account.balance %></span><%= @account.name %> ACCOUNT
+            (...<%= @account.number.match(/(.{0,#{4}}$)/) %>)
+          </h4>
+        </div>
+      </div>
+    </li>
+    <li class="">
+      <div class="ui-btn-inner ui-li">
+        <div class="ui-btn-text">
+          <div class="ui-grid-a">
+            <table data-role="table" id="transfer-table-custom" data-mode="reflow" class="transfer-list table-stroke">
+              <thead>
+              <tr>
+                <th data-priority="1">Sent to</th>
+                <th data-priority="3">Date</th>
+                <th data-priority="4">Amount</th>
+                <th data-priority="5">Balance</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @transactions.each do |transaction| %>
+                  <tr>
+                    <td><%= transaction.fromAccount %></td>
+                    <td><%= transaction.created_at.to_formatted_s(:long_ordinal) %></td>
+                    <td><%= transaction.amount %></td>
+                    <td><%= transaction.balance %></td>
+                    <td></td>
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+<%= link_to 'Back', balance_path, 'data-role' => "button", 'data-icon' => "back", 'data-iconpos' => "left" %>

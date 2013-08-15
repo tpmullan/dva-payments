@@ -1,0 +1,348 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery_mobile
+ *= require_directory .
+ */
+
+/* dva - data-theme="dva"
+-----------------------------------------------------------------------------------------------------------*/
+.hide {
+    display: none
+}
+
+.form-wrapper {
+    background: #fff !important;
+    padding: 1em !important
+}
+
+.ui-li-heading {
+    white-space: normal;
+    text-overflow: initial
+}
+
+.ui-edit-btn {
+    font-size: 13px
+}
+
+.form-element {
+    margin-bottom: 1em
+}
+
+.spin {
+    -webkit-animation-timing-function: linear
+}
+
+.header .home.ui-btn-corner-all, .ui-btn-corner-all {
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    border-radius: .4em
+}
+
+.ui-select .ui-btn-corner-all {
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em
+}
+
+.ui-btn-corner-left {
+    -moz-border-radius-topleft: .2em;
+    -webkit-border-top-left-radius: .2em;
+    border-top-left-radius: .2em;
+    -moz-border-radius-bottomleft: .2em;
+    -webkit-border-bottom-left-radius: .2em;
+    border-bottom-left-radius: .2em
+}
+
+.logo {
+    background: url('dva_header_logo_130.png') no-repeat center center;
+    height: 3em;
+    margin-bottom: .6em
+}
+
+.logoff.ui-btn-right {
+    margin-top: .8em;
+    font-size: .5em
+}
+
+.ui-bar-dva {
+    background: #ddd;
+    color: #333;
+    text-shadow: 0 1px 0 #eee
+}
+
+.ui-header.ui-bar-dva {
+    background: #fff
+}
+
+.ui-bar-dva, .ui-bar-dva input, .ui-bar-dva select, .ui-bar-dva textarea, .ui-bar-dva button {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.ui-bar-dva .ui-link-inherit {
+    color: #333
+}
+
+.ui-bar-dva .ui-link {
+    color: #2489ce;
+    font-weight: bold
+}
+
+.ui-header.ui-bar-dva .ui-btn-up-c, .ui-header.ui-bar-dva .ui-btn {
+    color: #666;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.ui-body-dva, .ui-body-dva.ui-dialog, .ui-dialog-datebox.ui-page.ui-body-b.ui-dialog {
+    background: #c0392b
+}
+
+.ui-dialog .content, .ui-dialog-datebox .ui-content, .ui-dialog-datebox .ui-content .ui-datebox-container {
+    background: #f0f0f0
+}
+
+.ui-body-dva, .ui-body-dva input, .ui-body-dva select, .ui-body-dva textarea, .ui-body-dva button {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.ui-body-dva .ui-link-inherit {
+    color: #333
+}
+
+.ui-body-dva .ui-link {
+    color: #fff;
+    font-weight: bold
+}
+
+.ui-btn-up-a, .ui-btn-hover-a {
+    font-weight: bold
+}
+
+.ui-btn-up-dva, .ui-btn-hover-dva {
+    border: 1px solid #184923;
+    background: #358e47;
+    font-weight: bold;
+    color: #eee;
+    text-shadow: 0 -1px 0 #184923;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#50b24b), to(#184923));
+    background-image: -webkit-linear-gradient(top, #50b24b, #184923);
+    background-image: -moz-linear-gradient(top, #50b24b, #184923);
+    background-image: -ms-linear-gradient(top, #50b24b, #184923);
+    background-image: -o-linear-gradient(top, #50b24b, #184923);
+    background-image: linear-gradient(top, #50b24b, #184923);
+    text-decoration: none
+}
+
+.ui-btn-up-dva.secondary-button, .ui-btn-hover-dva.secondary-button {
+    border: 1px solid #004b7e;
+    background: #005981;
+    font-weight: bold;
+    color: #eee;
+    text-shadow: 0 -1px 0 #102e4a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#728fb1), to(#102e4a));
+    background-image: -webkit-linear-gradient(top, #728fb1, #102e4a);
+    background-image: -moz-linear-gradient(top, #728fb1, #102e4a);
+    background-image: -ms-linear-gradient(top, #728fb1, #102e4a);
+    background-image: -o-linear-gradient(top, #728fb1, #102e4a);
+    background-image: linear-gradient(top, #728fb1, #102e4a)
+}
+
+.ui-btn-up-dva.delete, .ui-btn-hover-dva.delete {
+    border: 1px solid #741f1f;
+    background: #ba2f2f;
+    font-weight: bold;
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ed3b3b), to(#741f1f));
+    background-image: -webkit-linear-gradient(top, #ed3b3b, #741f1f);
+    background-image: -moz-linear-gradient(top, #ed3b3b, #741f1f);
+    background-image: -ms-linear-gradient(top, #ed3b3b, #741f1f);
+    background-image: -o-linear-gradient(top, #ed3b3b, #741f1f);
+    background-image: linear-gradient(top, #ed3b3b, #741f1f);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #741f1f
+}
+
+.ui-btn-up-dva a.ui-link-inherit {
+    color: #333
+}
+
+.ui-btn-up-dva, .ui-btn-hover-dva, .ui-btn-down-dva {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.ui-bar-dva .ui-navbar .ui-btn.ui-btn-down-c.ui-btn {
+    border: 0;
+    color: #000;
+    text-shadow: none
+}
+
+.ui-bar-dva .ui-navbar .ui-btn {
+    background-image: -moz-linear-gradient(top, #7f8c8d, #2c3e50);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7f8c8d), color-stop(1, #2c3e50));
+    -msfilter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3d3d3d', EndColorStr='#5a5a5a')";
+    color: #ddd
+}
+
+.ui-bar-dva .ui-btn-up-c, .ui-bar-dva .ui-btn {
+    background: #c0392b;
+    color: #fff;
+    text-shadow: 0 -1px 0 #444;
+    border: #666
+}
+
+.ui-bar-dva .ui-navbar .ui-btn-active {
+    background: #c0392b;
+    color: #fff
+}
+
+.ui-navbar .ui-btn {
+    margin-left: 1px
+}
+
+.calendar .ui-bar-dva {
+    background: #000
+}
+
+.ui-navbar a:active {
+    text-decoration: none
+}
+
+.ui-navbar a:hover {
+    background: #242424
+}
+
+.ui-btn-down-d a.ui-link-inherit {
+    border: 0;
+    background: 0
+}
+
+.ui-fluid {
+    display: table;
+    width: 100%
+}
+
+.ui-table-row {
+    display: table-row
+}
+
+.ui-fluid .ui-btn {
+    display: table-cell;
+    text-align: center
+}
+
+.ui-fluid .ui-btn .ui-btn-inner {
+    width: 100%;
+    padding: .6em 0
+}
+
+.ui-fluid .ui-controlgroup-controls {
+    width: 100%;
+    display: table
+}
+
+.ui-fluid .ui-checkbox, .ui-fluid .ui-radio {
+    display: table-cell
+}
+
+.ui-fluid .ui-checkbox label, .ui-fluid .ui-radio label {
+    width: 100%;
+    display: block;
+    text-align: center
+}
+
+.footer .footer-navbar .ui-btn-active {
+    border: 0;
+    background: 0
+}
+
+.footer, .footer .footer-navbar {
+    text-align: center;
+    background-color: #61130b
+}
+
+.footer .footer-navbar li.ui-btn-active, .footer .footer-navbar ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+    font-size: 12px
+}
+
+.footer .footer-navbar li.more-navbar-item {
+    border: 0
+}
+
+.footer .footer-navbar ul li a {
+    font-weight: normal;
+    text-shadow: none;
+    cursor: pointer
+}
+
+.content {
+    margin-bottom: 3em
+}
+
+.footer .footer-navbar ul {
+    height: 20px;
+    padding: 0
+}
+
+.ui-page .ui-footer {
+    height: auto;
+    top: auto;
+    margin-top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%
+}
+
+@media all and (min-width:0) and (max-width:321px) {
+    div.navbar ul.ui-grid-b li.accounts-navbar-item, div.navbar ul.ui-grid-b li.more-navbar-item {
+        width: 30.333%
+    }
+
+    div.navbar ul.ui-grid-b li.paytransfer-navbar-item {
+        width: 39%
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    div.content, div.navbar {
+        width: 70%;
+        margin: 0 auto
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1479px) {
+    div.content, div.navbar {
+        width: 50%;
+        margin: 0 auto
+    }
+}
+
+@media all and (min-width:1480px) {
+    div.content, div.navbar {
+        width: 40%;
+        margin: 0 auto
+    }
+}
+
+.ui-corner-all {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}

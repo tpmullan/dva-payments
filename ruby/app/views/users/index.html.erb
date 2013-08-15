@@ -1,0 +1,28 @@
+<% provide(:title, 'Profile') %>
+
+<div class="ui-grid-b">
+  <table data-role="table" class="ui-body-d ui-shadow table-stripe ui-responsive">
+    <thead>
+    <tr class="ui-bar-d">
+      <th>Name</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= link_to 'Show', user, 'data-role' => "button", 'data-icon' => "arrow-r", 'data-iconpos' => "notext", 'data-inline' => "true" %></td>
+          <td><%= link_to 'Edit', edit_user_path(user), 'data-role' => "button", 'data-icon' => "info", 'data-iconpos' => "notext", 'data-inline' => "true" %></td>
+          <td><%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'}, 'data-role' => "button", 'data-icon' => "delete", 'data-iconpos' => "notext", 'data-inline' => "true" %></td>
+        </tr>
+    <% end %>
+    </table>
+</div>
+<br/>
+
+<%= link_to 'New User', new_user_path, 'data-role' => "button", 'data-inline' => "true" %>

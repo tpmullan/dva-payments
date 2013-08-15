@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  toAccount: MyString
+  fromAccount: MyString
+  amount: 
+  balance: 
+  memo: MyString
+  user_id: 1
+
+two:
+  toAccount: MyString
+  fromAccount: MyString
+  amount: 
+  balance: 
+  memo: MyString
+  user_id: 1
