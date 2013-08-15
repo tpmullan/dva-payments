@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="holo.red" parent="android:Theme.Light">
+
+    <item name="android:editTextStyle">@style/EditTextholo.red</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxholo.red</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonholo.red</item>
+
+    <item name="android:buttonStyle">@style/Buttonholo.red</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonholo.red</item>
+
+    <item name="android:spinnerStyle">@style/Spinnerholo.red</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/Spinnerholo.red.DropDown</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemholo.red</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarholo.red</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarholo.red</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarholo.red</item>
+
+    <item name="android:buttonStyleToggle">@style/Toggleholo.red</item>
+
+  </style>
+
+</resources>
