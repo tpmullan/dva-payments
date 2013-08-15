@@ -24,6 +24,8 @@
 		A7B9F6C917B5372E00A067F9 /* ContactStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B9F6C817B5372E00A067F9 /* ContactStorage.m */; };
 		A7B9F6CC17B5482100A067F9 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B9F6CB17B5482100A067F9 /* Contact.m */; };
 		A7B9F6CE17B571BE00A067F9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B9F6CD17B571BE00A067F9 /* libsqlite3.0.dylib */; };
+		A7F5A82717BD665A00C863D9 /* PraetorianWallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F5A82617BD665A00C863D9 /* PraetorianWallpaper.png */; };
+		A7F5A82917BD668D00C863D9 /* PraetorianWallpaperSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F5A82817BD668D00C863D9 /* PraetorianWallpaperSmall.png */; };
 		A7F5B7BC17A1777000C43ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5B7BB17A1777000C43ADD /* UIKit.framework */; };
 		A7F5B7BE17A1777000C43ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5B7BD17A1777000C43ADD /* Foundation.framework */; };
 		A7F5B7C017A1777000C43ADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5B7BF17A1777000C43ADD /* CoreGraphics.framework */; };
@@ -48,6 +50,7 @@
 		E2F277CD17B2E19A00D0B147 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F277CC17B2E19800D0B147 /* BalanceViewController.m */; };
 		E2F5F00817B95AB4003AF77A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2F5F00717B95AB3003AF77A /* Settings.bundle */; };
 		E2F5F04417BAE4C9003AF77A /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F5F04317BAE4C9003AF77A /* SignUpController.m */; };
+		E2F5F04E17BBDB93003AF77A /* SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F5F04D17BBDB93003AF77A /* SignUp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,8 @@
 		A7B9F6CA17B5482100A067F9 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		A7B9F6CB17B5482100A067F9 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		A7B9F6CD17B571BE00A067F9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A7F5A82617BD665A00C863D9 /* PraetorianWallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PraetorianWallpaper.png; sourceTree = "<group>"; };
+		A7F5A82817BD668D00C863D9 /* PraetorianWallpaperSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PraetorianWallpaperSmall.png; sourceTree = "<group>"; };
 		A7F5B7B817A1777000C43ADD /* DVA IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DVA IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F5B7BB17A1777000C43ADD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A7F5B7BD17A1777000C43ADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +132,8 @@
 		E2F5F00717B95AB3003AF77A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E2F5F04217BAE4C8003AF77A /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
 		E2F5F04317BAE4C9003AF77A /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
+		E2F5F04C17BBDB93003AF77A /* SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUp.h; sourceTree = "<group>"; };
+		E2F5F04D17BBDB93003AF77A /* SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +189,8 @@
 				A769E72C17A56D1F0047C8CD /* MyAccount.m */,
 				A769E73817A612CF0047C8CD /* MyMoneyRequest.h */,
 				A769E73917A612CF0047C8CD /* MyMoneyRequest.m */,
+				E2F5F04C17BBDB93003AF77A /* SignUp.h */,
+				E2F5F04D17BBDB93003AF77A /* SignUp.m */,
 				A74965F817A6B34C009072BF /* MoveMoneyRequest.h */,
 				A74965F917A6B34C009072BF /* MoveMoneyRequest.m */,
 				A7B9F6C217B3FAA200A067F9 /* MyFriendsRequest.h */,
@@ -193,6 +202,8 @@
 		A7F5B7AF17A1777000C43ADD = {
 			isa = PBXGroup;
 			children = (
+				A7F5A82817BD668D00C863D9 /* PraetorianWallpaperSmall.png */,
+				A7F5A82617BD665A00C863D9 /* PraetorianWallpaper.png */,
 				A7B9F6CD17B571BE00A067F9 /* libsqlite3.0.dylib */,
 				A7B9F6C517B402E500A067F9 /* AddressBook.framework */,
 				A7F5B7C117A1777000C43ADD /* DVA IOS */,
@@ -374,6 +385,8 @@
 				E2F277C317B2852400D0B147 /* green.png in Resources */,
 				E2F277CA17B29BBD00D0B147 /* yellow.png in Resources */,
 				E2F5F00817B95AB4003AF77A /* Settings.bundle in Resources */,
+				A7F5A82717BD665A00C863D9 /* PraetorianWallpaper.png in Resources */,
+				A7F5A82917BD668D00C863D9 /* PraetorianWallpaperSmall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +472,7 @@
 				A7B9F6CC17B5482100A067F9 /* Contact.m in Sources */,
 				E217AE0717B58BA3003EF08E /* RoundedEdges.m in Sources */,
 				E2F5F04417BAE4C9003AF77A /* SignUpController.m in Sources */,
+				E2F5F04E17BBDB93003AF77A /* SignUp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,9 +585,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVA IOS/DVA IOS-Prefix.pch";
 				INFOPLIST_FILE = "DVA IOS/DVA IOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -585,9 +597,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVA IOS/DVA IOS-Prefix.pch";
 				INFOPLIST_FILE = "DVA IOS/DVA IOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -24,8 +24,6 @@
 - (IBAction)switchRememberMe:(id)sender;
 - (void) alertStatus:(NSString *)msg withTitle:(NSString *) title;
 - (void) onSuccessfulLogin;
-- (void) onUnsuccessful;
-- (void) onSuccessfulLoginWithMessage:(NSString *) message;
 - (void) onUnsuccessfulWithMessage:(NSString *) message;
 -(bool) checkLogin: (NSString *) username withPassword:(NSString *) password withRememberMe:(bool) rememberMe;
 - (void)registerDefaultsFromSettingsBundle;

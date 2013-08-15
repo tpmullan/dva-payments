@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
+#import "AccountStorage.h"
+
 @class LoginRequest;
 @protocol LoginRequestDelegate<NSObject>
 -(void) finishwithStatus:(BOOL) status withMessage:(NSString*) message;
